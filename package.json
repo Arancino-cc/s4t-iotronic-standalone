@@ -1,42 +1,140 @@
 {
-  "name": "s4t-iotronic-standalone",
-  "version": "0.0.2",
-  "description": "s4t-node-cloud is the implementation, totally in nodejs, of a personal cloud to remote manage embedded devices Arduino YUN/Linino One and Raspberry Pi.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      {
+        "raw": "iotronic-standalone",
+        "scope": null,
+        "escapedName": "iotronic-standalone",
+        "name": "iotronic-standalone",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/root"
+    ]
+  ],
+  "_from": "iotronic-standalone@latest",
+  "_id": "iotronic-standalone@1.0.4",
+  "_inCache": true,
+  "_location": "/iotronic-standalone",
+  "_nodeVersion": "7.8.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/iotronic-standalone-1.0.4.tgz_1495117052144_0.5244493247009814"
   },
-  "dependencies":{
-    "mysql": ">=2.7.0",
-    "nconf": ">=0.7.1",
-    "ip": ">=0.3.3",
-    "uuid":">=2.0.1",
-    "autobahn": ">=0.9.6",
-    "express": ">=4.13.1"
+  "_npmUser": {
+    "name": "npeditto",
+    "email": "npeditto@unime.it"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MDSLab/s4t-iotronic-standalone.git"
+  "_npmVersion": "4.5.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "iotronic-standalone",
+    "scope": null,
+    "escapedName": "iotronic-standalone",
+    "name": "iotronic-standalone",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
   },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/iotronic-standalone/-/iotronic-standalone-1.0.4.tgz",
+  "_shasum": "a5ac247730dd3272b1aa73af8ee4b4456cf42ba4",
+  "_shrinkwrap": null,
+  "_spec": "iotronic-standalone",
+  "_where": "/root",
+  "author": {
+    "name": "Nicola Peditto",
+    "email": "npeditto@unime.it"
+  },
+  "bugs": {
+    "url": "https://github.com/MDSLab/s4t-iotronic-standalone/issues"
+  },
+  "contributors": [
+    {
+      "name": "Dario Bruneo",
+      "email": "dbruneo@unime.it"
+    },
+    {
+      "name": "Francesco Longo",
+      "email": "flongo@unime.it"
+    },
+    {
+      "name": "Giovanni Merlino",
+      "email": "gmerlino@unime.it"
+    },
+    {
+      "name": "Andrea Rocco Lotronto",
+      "email": "andrealotronto@gmail.com"
+    },
+    {
+      "name": "Fabio Verboso",
+      "email": "fverboso@unime.it"
+    },
+    {
+      "name": "Carmelo Romeo",
+      "email": "caromeo@unime.it"
+    }
+  ],
+  "dependencies": {
+    "autobahn": ">=0.9.9",
+    "body-parser": ">=1.16.1",
+    "express": ">=4.13.3",
+    "ip": ">=1.1.0",
+    "log4js": ">=0.6.29",
+    "mysql": ">=2.10.0",
+    "nconf": ">=0.8.2",
+    "node-reverse-wstunnel": ">=0.1.2",
+    "node-uuid": ">=1.4.7",
+    "q": ">=1.4.1",
+    "requestify": ">=0.1.17",
+    "util": ">=0.10.3"
+  },
+  "description": "IoTronic-standalone is the implementation of a personal Cloud to remote manage embedded devices (Arduino YUN/Linino One, Raspberry Pi 2/3, etc)",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "a5ac247730dd3272b1aa73af8ee4b4456cf42ba4",
+    "tarball": "https://registry.npmjs.org/iotronic-standalone/-/iotronic-standalone-1.0.4.tgz"
+  },
+  "gitHead": "8a4eb18513518bff9537059dd58fed95481208c8",
+  "homepage": "https://github.com/MDSLab/s4t-iotronic-standalone",
   "keywords": [
     "cloud",
     "IoT",
     "Arduino",
     "Raspberry",
-    "WAMP",	
+    "WAMP",
     "tunnel",
     "reverse",
     "WebSocket"
   ],
-  "author": "Andrea Rocco Lotronto <andrealotronto@gmail.com>",
   "license": [
     {
       "type": "Apache-2.0",
       "url": "https://github.com/MDSLab/s4t-iotronic-standalone/LICENSE"
     }
   ],
-  "bugs": {
-    "url": "https://github.com/MDSLab/s4t-iotronic-standalone/issues"
+  "main": "lib/s4t_wamp_server.js",
+  "maintainers": [
+    {
+      "name": "npeditto",
+      "email": "npeditto@unime.it"
+    }
+  ],
+  "name": "iotronic-standalone",
+  "optionalDependencies": {},
+  "readme": "# Stack4Things IoTronic (standalone version)\n\nStack4Things is an Internet of Things framework developed by the Mobile and Distributed Systems Lab (MDSLab) at the University of Messina, Italy. Stack4Things is an open source project that helps you in managing IoT device fleets without caring about their physical location, their network configuration, their underlying technology. It is a Cloud-oriented horizontal solution (integrated with OpenStack) providing IoT object virtualization, customization, and orchestration. Stack4Things provides you with an out-of-the-box experience on several of the most popular embedded and mobile systems.\n\nMore details about Stack4Things can be found [here](https://github.com/MDSLab/stack4things).\n\nIoTronic is the Cloud-side component in the Stack4Things architecture. In this repository, you find the standalone version of the IoTronic. It works with the version of the Lightining-rod probe that you can find [here] (https://github.com/MDSLab/s4t-lightning-rod).\n\nIoTronic (in the standalone version) has been tested to work on:\n\n* Ubuntu 16.04 \n* Ubuntu 14.04 \n\n## Installation guides\n\n* [Installation guide for Ubuntu 16.04](docs/installation_ubuntu_16.04.md)\n\n* [Installation guide for Ubuntu 14.04](docs/installation_ubuntu_14.04.md)\n\nIf you want to install IoTronic within an LXD container, you can find a guide [here](docs/installation_lxd.md).\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MDSLab/s4t-iotronic-standalone.git"
   },
-  "homepage": "https://github.com/MDSLab/s4t-iotronic-standalone"
+  "scripts": {
+    "postinstall": "./scripts/postinst",
+    "uninstall": "./scripts/postuninst"
+  },
+  "version": "1.0.4"
 }
